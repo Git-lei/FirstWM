@@ -1,13 +1,84 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<!-- 轮播图 -->
+<swiper indicator-dots="true" autoplay="true" circular="true">
+  <swiper-item>
+    <image src="/static/uploads/slide_1.jpg"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="/static/uploads/slide_2.jpg"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="/static/uploads/slide_3.jpg"></image>
+  </swiper-item>
+   <swiper-item>
+  <image src="/static/uploads/slide_4.jpg"></image>
+    </swiper-item>
+  <swiper-item>
+    <image src="/static/uploads/slide_5.jpg"></image>
+  </swiper-item>
+</swiper>
+<!-- 乐园活动 -->
+<view class="title">
+  乐园活动
+</view>
+<view>
+
+
+<!-- 活动条目 -->
+<view class="item">
+
+  <navigator>
+    <image src="/static/uploads/item_1.png"></image>
+  </navigator>
+
+  <!-- 描述信息 -->
+  <view class="info">
+    疯狂的红包 不一样的撕名牌 大型家庭亲子户外活动
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="free">免费</view>
+
+  <!-- 阅读人数  -->
+<view class="total">
+  <text class="read">·  200人已阅读</text>
+  <text class="time">·  本周六开始</text>
+
+</view>
+</view>
+<view class="item">
+
+  <navigator>
+    <image src="/static/uploads/item_2.png"></image>
+  </navigator>
+
+  <!-- 描述信息 -->
+  <view class="info">
+    疯狂的红包 不一样的撕名牌 大型家庭亲子户外活动
   </view>
+  <view class="free">免费</view>
+
+  <!-- 阅读人数  -->
+<view class="total">
+  <text class="read">·  200人已阅读</text>
+  <text class="time">·  本周六开始</text>
+
+</view>
+</view>
+<view class="item">
+
+  <navigator>
+    <image src="/static/uploads/item_3.png"></image>
+  </navigator>
+
+  <!-- 描述信息 -->
+  <view class="info">
+    疯狂的红包 不一样的撕名牌 大型家庭亲子户外活动
+  </view>
+  <view class="free">免费</view>
+
+  <!-- 阅读人数  -->
+<view class="total">
+  <text class="read">·  200人已阅读</text>
+  <text class="time">·  本周六开始</text>
+
+</view>
+</view>
 </view>
